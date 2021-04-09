@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Articulos de computacion</h1>
+        <h3>"¿Qué productos le gustaria inspeccionar? "</h3>
+    </header>
+
+    <main>
+        <div class="categoria">
+            <h2>Motherboard</h2>
+            <select id="mother" onchange="motherSelect()">
+                <option value="">Elija una mother</option>
+                <option value="MSI">MSI</option>
+                <option value="Asrock">Asrock</option>
+                <option value="EVGA">EVGA</option>
+                <option value="Asus">Asus</option>
+            </select>
+            <div id="costoMother" class="costo"></div>
+            <div class="img" id="imgMother"></div>
+        </div>
+
+        <div class="categoria">
+            <h2>Memoria Ram</h2>
+            <select id="memory" onchange="memoryRamSelect()">
+                <option value="">Elija una memoria</option>
+                <option value="ddr3">ddr3</option>
+                <option value="ddr4">ddr4</option>
+            </select>
+            <div id="costoMemory" class="costo"></div>
+            <div class="img">
+                <div id="imgMemory"></div>
+            </div>           
+        </div>
+
+        <div class="categoria">
+            <h2>Almacenamiento</h2>
+            <select id="storage" onchange="storageSelect()">
+                <option value="">Elija un disco</option>
+                <option value="Disco solido">Disco solido</option>
+                <option value="Disco duro">Disco duro</option>
+            </select>
+            <div id="costoStorage" class="costo"></div>
+            <div class="img"id="imgStorage"></div>
+        </div>
+        <div class="categoria">
+            <h2>Fan Cooler</h2>
+            <select id="fanCooler" onchange="fanSelect()">
+                <option value="">Elija un ventilador</option>
+                <option value="80mm">80mm</option>
+                <option value="120mm">120mm</option>
+            </select>
+            <div id="costoFanCooler" class="costo"></div>
+            <div class="img"id="imgFan"></div>
+        </div>
+        <div class="categoria">
+            <h2>Tarjeta Grafica</h2>
+            <select id="grafica" onchange="tarjetaGraficaSelect()">
+                <option value="">Elija una tarjeta</option>
+                <option value="NVIDIA">NVIDIA</option>
+                <option value="AMD">AMD</option>
+            </select>
+            <div id="costoGrafica" class="costo"></div>
+            <div class="img"id="imgGrafica"></div>
+        </div>
+        <div class="boton">
+            <button id="boton">Calcular</button>
+            <div id="total">Total a pagar</div>
+        </div>
+    </main>
+   
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
